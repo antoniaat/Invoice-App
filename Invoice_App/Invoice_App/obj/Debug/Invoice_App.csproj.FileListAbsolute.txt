@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\Invoice_App\Invoice_App\bin\Debug\Invoice_App.exe.config
+C:\Users\User\Desktop\Invoice_App\Invoice_App\bin\Debug\Invoice_App.exe
+C:\Users\User\Desktop\Invoice_App\Invoice_App\bin\Debug\Invoice_App.pdb
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.Form1.resources
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.Properties.Resources.resources
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.exe
+C:\Users\User\Desktop\Invoice_App\Invoice_App\obj\Debug\Invoice_App.pdb
