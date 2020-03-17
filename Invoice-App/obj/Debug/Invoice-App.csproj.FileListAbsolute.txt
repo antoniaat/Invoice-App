@@ -1,0 +1,9 @@
+D:\Github\Invoice-App\Invoice-App\bin\Debug\Invoice-App.exe.config
+D:\Github\Invoice-App\Invoice-App\bin\Debug\Invoice-App.exe
+D:\Github\Invoice-App\Invoice-App\bin\Debug\Invoice-App.pdb
+D:\Github\Invoice-App\Invoice-App\obj\Debug\Invoice-App.csprojAssemblyReference.cache
+D:\Github\Invoice-App\Invoice-App\obj\Debug\Invoice_App.Properties.Resources.resources
+D:\Github\Invoice-App\Invoice-App\obj\Debug\Invoice-App.csproj.GenerateResource.cache
+D:\Github\Invoice-App\Invoice-App\obj\Debug\Invoice-App.csproj.CoreCompileInputs.cache
+D:\Github\Invoice-App\Invoice-App\obj\Debug\Invoice-App.exe
+D:\Github\Invoice-App\Invoice-App\obj\Debug\Invoice-App.pdb
