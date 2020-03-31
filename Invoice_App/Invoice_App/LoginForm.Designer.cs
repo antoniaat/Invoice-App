@@ -70,7 +70,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 82);
             this.button1.TabIndex = 3;
-            this.button1.Text = "LOGIN";
+            this.button1.Text = "ВХОД";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -81,9 +81,9 @@
             this.label1.Location = new System.Drawing.Point(68, 215);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 39);
+            this.label1.Size = new System.Drawing.Size(129, 39);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Password";
+            this.label1.Text = "Парола";
             // 
             // label2
             // 
@@ -93,9 +93,9 @@
             this.label2.Location = new System.Drawing.Point(68, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 39);
+            this.label2.Size = new System.Drawing.Size(315, 39);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Username";
+            this.label2.Text = "Потребителско име";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // linkLabel1
@@ -106,10 +106,10 @@
             this.linkLabel1.Location = new System.Drawing.Point(68, 464);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(359, 33);
+            this.linkLabel1.Size = new System.Drawing.Size(251, 33);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "DON\'T HAVE AN ACCOUNT?";
+            this.linkLabel1.Text = "НЯМАТЕ АКАУНТ?";
             // 
             // LoginForm
             // 
