@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(43, 69);
+            this.label1.Location = new System.Drawing.Point(43, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 36);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(49, 119);
+            this.textBox1.Location = new System.Drawing.Point(49, 79);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(294, 39);
             this.textBox1.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(43, 180);
+            this.label2.Location = new System.Drawing.Point(43, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 36);
             this.label2.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(49, 233);
+            this.textBox2.Location = new System.Drawing.Point(49, 174);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(294, 39);
             this.textBox2.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(43, 303);
+            this.label3.Location = new System.Drawing.Point(43, 230);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 36);
             this.label3.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(49, 360);
+            this.textBox3.Location = new System.Drawing.Point(49, 269);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(294, 39);
             this.textBox3.TabIndex = 5;
@@ -95,7 +95,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
             this.button1.Font = new System.Drawing.Font("Montserrat SemiBold", 14F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(49, 435);
+            this.button1.Location = new System.Drawing.Point(49, 334);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(294, 82);
@@ -108,7 +108,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(74, 537);
+            this.linkLabel1.Location = new System.Drawing.Point(43, 430);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(247, 36);
@@ -120,8 +120,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Invoice_App.Properties.Resources.bg3;
-            this.ClientSize = new System.Drawing.Size(1255, 659);
+            this.BackgroundImage = global::Invoice_App.Properties.Resources.sm;
+            this.ClientSize = new System.Drawing.Size(820, 506);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);

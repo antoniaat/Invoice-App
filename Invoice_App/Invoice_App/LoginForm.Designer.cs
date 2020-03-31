@@ -40,10 +40,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 157);
+            this.textBox1.Location = new System.Drawing.Point(52, 94);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(353, 37);
+            this.textBox1.Size = new System.Drawing.Size(308, 37);
             this.textBox1.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -54,10 +54,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 274);
+            this.textBox2.Location = new System.Drawing.Point(52, 192);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(353, 37);
+            this.textBox2.Size = new System.Drawing.Size(308, 37);
             this.textBox2.TabIndex = 2;
             // 
             // button1
@@ -65,10 +65,10 @@
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
             this.button1.Font = new System.Drawing.Font("Montserrat SemiBold", 14F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(74, 351);
+            this.button1.Location = new System.Drawing.Point(52, 260);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 82);
+            this.button1.Size = new System.Drawing.Size(174, 89);
             this.button1.TabIndex = 3;
             this.button1.Text = "ВХОД";
             this.button1.UseVisualStyleBackColor = false;
@@ -78,7 +78,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(68, 215);
+            this.label1.Location = new System.Drawing.Point(45, 148);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 39);
@@ -90,7 +90,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Font = new System.Drawing.Font("Montserrat SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(68, 99);
+            this.label2.Location = new System.Drawing.Point(45, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(315, 39);
@@ -103,7 +103,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(68, 464);
+            this.linkLabel1.Location = new System.Drawing.Point(46, 373);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(251, 33);
@@ -115,8 +115,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Invoice_App.Properties.Resources.bg3;
-            this.ClientSize = new System.Drawing.Size(1248, 646);
+            this.BackgroundImage = global::Invoice_App.Properties.Resources.sm;
+            this.ClientSize = new System.Drawing.Size(840, 511);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
