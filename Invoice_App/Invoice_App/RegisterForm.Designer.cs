@@ -120,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Invoice_App.Properties.Resources.sm;
+            
             this.ClientSize = new System.Drawing.Size(820, 506);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
