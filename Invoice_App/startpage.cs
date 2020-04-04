@@ -10,11 +10,6 @@ namespace Invoice_App
             InitializeComponent();
         }
 
-        private void StartPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Mycompany_Click(object sender, EventArgs e)
         {
             var companyForm = new Mycompany();

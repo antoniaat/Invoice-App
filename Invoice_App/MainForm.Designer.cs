@@ -236,7 +236,6 @@
             this.delete.TabIndex = 31;
             this.delete.Text = "Изтрий";
             this.delete.UseVisualStyleBackColor = false;
-            this.delete.Click += new System.EventHandler(this.button3_Click);
             // 
             // exit
             // 
@@ -279,7 +278,6 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(836, 197);
             this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label11
             // 
@@ -292,7 +290,6 @@
             this.label11.Size = new System.Drawing.Size(168, 18);
             this.label11.TabIndex = 34;
             this.label11.Text = "Номер на документ:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label2
             // 
@@ -414,7 +411,6 @@
             this.label12.Size = new System.Drawing.Size(38, 18);
             this.label12.TabIndex = 41;
             this.label12.Text = "ИД:";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
             // 
@@ -520,7 +516,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Създаване на фактура";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

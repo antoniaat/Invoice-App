@@ -105,7 +105,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StartPage";
             this.Text = "Начало";
-            this.Load += new System.EventHandler(this.StartPage_Load);
             this.ResumeLayout(false);
 
         }

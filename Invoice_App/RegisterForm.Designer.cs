@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(66, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Име:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -80,7 +79,6 @@
             this.label3.Size = new System.Drawing.Size(102, 26);
             this.label3.TabIndex = 4;
             this.label3.Text = "Парола:";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // textBox3
             // 
@@ -88,7 +86,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(445, 32);
             this.textBox3.TabIndex = 5;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // registerBtn
             // 
@@ -151,7 +148,6 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(445, 32);
             this.maskedTextBox1.TabIndex = 11;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // textBox2
             // 
@@ -183,7 +179,6 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "RegisterForm";
             this.Text = "Регистрация";
-            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

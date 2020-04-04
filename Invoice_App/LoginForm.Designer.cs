@@ -73,7 +73,7 @@
             this.loginBtn.TabIndex = 3;
             this.loginBtn.Text = "ВХОД";
             this.loginBtn.UseVisualStyleBackColor = false;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.loginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // label1
             // 
@@ -98,7 +98,6 @@
             this.label2.Size = new System.Drawing.Size(262, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Потребителско име";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // dontHaveAnAccount
             // 
@@ -133,7 +132,6 @@
             this.Name = "LoginForm";
             this.Text = "Вход";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
