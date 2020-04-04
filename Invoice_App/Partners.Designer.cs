@@ -1,6 +1,6 @@
 ﻿namespace Invoice_App
 {
-    partial class Partner
+    partial class Partners
     {
         /// <summary>
         /// Required designer variable.

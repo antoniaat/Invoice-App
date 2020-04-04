@@ -41,12 +41,13 @@
             this.addinvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.addinvoice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addinvoice.Location = new System.Drawing.Point(68, 470);
-            this.addinvoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addinvoice.Margin = new System.Windows.Forms.Padding(4);
             this.addinvoice.Name = "addinvoice";
             this.addinvoice.Size = new System.Drawing.Size(305, 101);
             this.addinvoice.TabIndex = 1;
             this.addinvoice.Text = "+ Създаване на ф-ра";
             this.addinvoice.UseVisualStyleBackColor = false;
+            this.addinvoice.Click += new System.EventHandler(this.addinvoice_Click);
             // 
             // invoicelist
             // 
@@ -54,12 +55,13 @@
             this.invoicelist.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.invoicelist.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.invoicelist.Location = new System.Drawing.Point(68, 338);
-            this.invoicelist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.invoicelist.Margin = new System.Windows.Forms.Padding(4);
             this.invoicelist.Name = "invoicelist";
             this.invoicelist.Size = new System.Drawing.Size(305, 101);
             this.invoicelist.TabIndex = 2;
             this.invoicelist.Text = "Преглед на списък с издадени ф-ри";
             this.invoicelist.UseVisualStyleBackColor = false;
+            this.invoicelist.Click += new System.EventHandler(this.invoicelist_Click);
             // 
             // partner
             // 
@@ -67,12 +69,13 @@
             this.partner.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.partner.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.partner.Location = new System.Drawing.Point(68, 202);
-            this.partner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.partner.Margin = new System.Windows.Forms.Padding(4);
             this.partner.Name = "partner";
             this.partner.Size = new System.Drawing.Size(305, 101);
             this.partner.TabIndex = 3;
             this.partner.Text = "Партньори";
             this.partner.UseVisualStyleBackColor = false;
+            this.partner.Click += new System.EventHandler(this.partner_Click);
             // 
             // mycompany
             // 
@@ -80,12 +83,13 @@
             this.mycompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.mycompany.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.mycompany.Location = new System.Drawing.Point(68, 68);
-            this.mycompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mycompany.Margin = new System.Windows.Forms.Padding(4);
             this.mycompany.Name = "mycompany";
             this.mycompany.Size = new System.Drawing.Size(305, 101);
             this.mycompany.TabIndex = 4;
             this.mycompany.Text = "Моята Фирма";
             this.mycompany.UseVisualStyleBackColor = false;
+            this.mycompany.Click += new System.EventHandler(this.Mycompany_Click);
             // 
             // StartPage
             // 
@@ -98,7 +102,7 @@
             this.Controls.Add(this.invoicelist);
             this.Controls.Add(this.addinvoice);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StartPage";
             this.Text = "Начало";
             this.Load += new System.EventHandler(this.StartPage_Load);

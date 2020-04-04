@@ -70,11 +70,11 @@
     <Compile Include="Mycompany.Designer.cs">
       <DependentUpon>Mycompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="Partner.cs">
+    <Compile Include="Partners.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Partner.Designer.cs">
-      <DependentUpon>Partner.cs</DependentUpon>
+    <Compile Include="Partners.Designer.cs">
+      <DependentUpon>Partners.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,8 +108,8 @@
     <EmbeddedResource Include="Mycompany.resx">
       <DependentUpon>Mycompany.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Partner.resx">
-      <DependentUpon>Partner.cs</DependentUpon>
+    <EmbeddedResource Include="Partners.resx">
+      <DependentUpon>Partners.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
