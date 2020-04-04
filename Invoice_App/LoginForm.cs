@@ -26,5 +26,17 @@ namespace Invoice_App
         {
 
         }
+
+        private void DontHaveAnAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var registerForm = new RegisterForm();
+            registerForm.Show();
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            var startPageForm = new StartPage();
+            startPageForm.Show();
+        }
     }
 }

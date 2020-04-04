@@ -89,11 +89,11 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="startpage.cs">
+    <Compile Include="StartPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="startpage.Designer.cs">
-      <DependentUpon>startpage.cs</DependentUpon>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="InvoiceList.resx">
       <DependentUpon>InvoiceList.cs</DependentUpon>
@@ -119,8 +119,8 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="startpage.resx">
-      <DependentUpon>startpage.cs</DependentUpon>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

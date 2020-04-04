@@ -32,15 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.registerBtn = new System.Windows.Forms.Button();
+            this.alreadyRegistered = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -71,13 +71,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Фамилия:";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(284, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(445, 32);
-            this.textBox2.TabIndex = 3;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -97,31 +90,33 @@
             this.textBox3.TabIndex = 5;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // button1
+            // registerBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(48, 303);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(294, 82);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "РЕГИСТРАЦИЯ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.registerBtn.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.registerBtn.ForeColor = System.Drawing.Color.White;
+            this.registerBtn.Location = new System.Drawing.Point(48, 303);
+            this.registerBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(294, 82);
+            this.registerBtn.TabIndex = 6;
+            this.registerBtn.Text = "РЕГИСТРАЦИЯ";
+            this.registerBtn.UseVisualStyleBackColor = false;
+            this.registerBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
-            // linkLabel1
+            // alreadyRegistered
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.SystemColors.Window;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(43, 403);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(206, 26);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "ИМАТЕ АКАУНТ?";
+            this.alreadyRegistered.AutoSize = true;
+            this.alreadyRegistered.BackColor = System.Drawing.SystemColors.Window;
+            this.alreadyRegistered.LinkColor = System.Drawing.Color.Black;
+            this.alreadyRegistered.Location = new System.Drawing.Point(43, 403);
+            this.alreadyRegistered.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.alreadyRegistered.Name = "alreadyRegistered";
+            this.alreadyRegistered.Size = new System.Drawing.Size(206, 26);
+            this.alreadyRegistered.TabIndex = 7;
+            this.alreadyRegistered.TabStop = true;
+            this.alreadyRegistered.Text = "ИМАТЕ АКАУНТ?";
+            this.alreadyRegistered.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AlreadyRegistered_LinkClicked);
             // 
             // label4
             // 
@@ -158,21 +153,28 @@
             this.maskedTextBox1.TabIndex = 11;
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(284, 129);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(445, 32);
+            this.textBox2.TabIndex = 12;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1145, 568);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.alreadyRegistered);
+            this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -192,14 +194,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button registerBtn;
+        private System.Windows.Forms.LinkLabel alreadyRegistered;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
