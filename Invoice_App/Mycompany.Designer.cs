@@ -214,7 +214,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Mycompany";
-            this.Text = "My Company";
+            this.Text = "Моята фирма";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -131,7 +131,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "LoginForm";
-            this.Text = "Login";
+            this.Text = "Вход";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
