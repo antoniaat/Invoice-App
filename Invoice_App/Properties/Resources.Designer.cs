@@ -59,18 +59,5 @@ namespace Invoice_App.Properties {
                 resourceCulture = value;
             }
         }
-<<<<<<< HEAD
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sm {
-            get {
-                object obj = ResourceManager.GetObject("sm", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-=======
->>>>>>> d194668b9623a4d342968feef63d531f921b7f98
     }
 }
