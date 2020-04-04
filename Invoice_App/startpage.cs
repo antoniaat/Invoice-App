@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Invoice_App
 {
-    public partial class startpage : Form
+    public partial class StartPage : Form
     {
-        public startpage()
+        public StartPage()
         {
             InitializeComponent();
         }
 
         private void изборНаФирмаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartPage_Load(object sender, EventArgs e)
         {
 
         }
