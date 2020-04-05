@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dontHaveAnAccount = new System.Windows.Forms.LinkLabel();
+            this.totalexit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -67,10 +68,10 @@
             this.loginBtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(51, 269);
+            this.loginBtn.Location = new System.Drawing.Point(51, 270);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(5);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(174, 89);
+            this.loginBtn.Size = new System.Drawing.Size(192, 64);
             this.loginBtn.TabIndex = 3;
             this.loginBtn.Text = "ВХОД";
             this.loginBtn.UseVisualStyleBackColor = false;
@@ -105,7 +106,7 @@
             this.dontHaveAnAccount.AutoSize = true;
             this.dontHaveAnAccount.BackColor = System.Drawing.SystemColors.Window;
             this.dontHaveAnAccount.LinkColor = System.Drawing.Color.Black;
-            this.dontHaveAnAccount.Location = new System.Drawing.Point(46, 373);
+            this.dontHaveAnAccount.Location = new System.Drawing.Point(46, 359);
             this.dontHaveAnAccount.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.dontHaveAnAccount.Name = "dontHaveAnAccount";
             this.dontHaveAnAccount.Size = new System.Drawing.Size(197, 25);
@@ -114,18 +115,34 @@
             this.dontHaveAnAccount.Text = "НЯМАТЕ АКАУНТ?";
             this.dontHaveAnAccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.DontHaveAnAccount_LinkClicked);
             // 
+            // totalexit
+            // 
+            this.totalexit.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.totalexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.totalexit.ForeColor = System.Drawing.Color.White;
+            this.totalexit.Location = new System.Drawing.Point(612, 502);
+            this.totalexit.Margin = new System.Windows.Forms.Padding(5);
+            this.totalexit.Name = "totalexit";
+            this.totalexit.Size = new System.Drawing.Size(174, 66);
+            this.totalexit.TabIndex = 7;
+            this.totalexit.Text = "ИЗХОД";
+            this.totalexit.UseVisualStyleBackColor = false;
+            this.totalexit.Click += new System.EventHandler(this.totalexit_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1122, 582);
+            this.ClientSize = new System.Drawing.Size(816, 582);
+            this.Controls.Add(this.totalexit);
             this.Controls.Add(this.dontHaveAnAccount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.LoginPasswordTexbox);
             this.Controls.Add(this.textBox1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -147,5 +164,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel dontHaveAnAccount;
+        private System.Windows.Forms.Button totalexit;
     }
 }

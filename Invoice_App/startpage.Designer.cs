@@ -33,6 +33,7 @@
             this.invoicelist = new System.Windows.Forms.Button();
             this.partner = new System.Windows.Forms.Button();
             this.mycompany = new System.Windows.Forms.Button();
+            this.mainexit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addinvoice
@@ -91,12 +92,27 @@
             this.mycompany.UseVisualStyleBackColor = false;
             this.mycompany.Click += new System.EventHandler(this.Mycompany_Click);
             // 
+            // mainexit
+            // 
+            this.mainexit.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.mainexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.mainexit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.mainexit.Location = new System.Drawing.Point(827, 68);
+            this.mainexit.Margin = new System.Windows.Forms.Padding(4);
+            this.mainexit.Name = "mainexit";
+            this.mainexit.Size = new System.Drawing.Size(241, 65);
+            this.mainexit.TabIndex = 5;
+            this.mainexit.Text = "Изход";
+            this.mainexit.UseVisualStyleBackColor = false;
+            this.mainexit.Click += new System.EventHandler(this.mainexit_Click);
+            // 
             // StartPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1148, 646);
+            this.Controls.Add(this.mainexit);
             this.Controls.Add(this.mycompany);
             this.Controls.Add(this.partner);
             this.Controls.Add(this.invoicelist);
@@ -114,5 +130,6 @@
         private System.Windows.Forms.Button invoicelist;
         private System.Windows.Forms.Button partner;
         private System.Windows.Forms.Button mycompany;
+        private System.Windows.Forms.Button mainexit;
     }
 }

@@ -13,13 +13,19 @@ namespace Invoice_App
         private void AlreadyRegistered_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var loginForm = new LoginForm();
+            loginForm.TopMost = true;
             loginForm.Show();
+            this.Hide();
         }
 
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
             var loginForm = new LoginForm();
-            loginForm.Show(); 
+            loginForm.TopMost = true;
+            loginForm.Show();
+
+
         }
-    }
+       
+}
 }

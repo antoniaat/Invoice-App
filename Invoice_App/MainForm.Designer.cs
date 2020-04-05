@@ -242,13 +242,14 @@
             this.exit.BackColor = System.Drawing.Color.LightSeaGreen;
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.exit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exit.Location = new System.Drawing.Point(948, 558);
+            this.exit.Location = new System.Drawing.Point(1013, 558);
             this.exit.Margin = new System.Windows.Forms.Padding(4);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(129, 54);
             this.exit.TabIndex = 32;
             this.exit.Text = "Отказ";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // recipientcombo
             // 
@@ -477,7 +478,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1435, 672);
+            this.ClientSize = new System.Drawing.Size(1168, 636);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label10);
@@ -512,6 +513,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";

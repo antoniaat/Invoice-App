@@ -11,9 +11,6 @@ namespace Invoice_App
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            this.Hide();
-            StartPage startPageForm  = new StartPage();
-            startPageForm.ShowDialog();
             this.Close();
         }
     }

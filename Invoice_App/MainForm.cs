@@ -8,5 +8,10 @@ namespace Invoice_App
         {
             InitializeComponent();
         }
+
+        private void exit_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -8,5 +8,10 @@ namespace Invoice_App
         {
             InitializeComponent();
         }
+
+        private void repeat_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

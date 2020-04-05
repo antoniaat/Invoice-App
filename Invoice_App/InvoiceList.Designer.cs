@@ -68,7 +68,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(900, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 284);
             this.dataGridView1.TabIndex = 0;
             // 
             // numberofinvoice
@@ -243,20 +243,21 @@
             this.repeat.BackColor = System.Drawing.Color.LightSeaGreen;
             this.repeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.repeat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.repeat.Location = new System.Drawing.Point(924, 539);
+            this.repeat.Location = new System.Drawing.Point(990, 474);
             this.repeat.Margin = new System.Windows.Forms.Padding(4);
             this.repeat.Name = "repeat";
             this.repeat.Size = new System.Drawing.Size(115, 54);
             this.repeat.TabIndex = 12;
             this.repeat.Text = "< Назад";
             this.repeat.UseVisualStyleBackColor = false;
+            this.repeat.Click += new System.EventHandler(this.repeat_Click);
             // 
             // InvoiceList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1088, 616);
+            this.ClientSize = new System.Drawing.Size(1154, 562);
             this.Controls.Add(this.repeat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
