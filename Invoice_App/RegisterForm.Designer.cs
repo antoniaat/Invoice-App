@@ -155,6 +155,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(445, 32);
             this.textBox2.TabIndex = 12;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // RegisterForm
             // 
