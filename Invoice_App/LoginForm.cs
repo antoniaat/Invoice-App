@@ -19,7 +19,9 @@ namespace Invoice_App
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             var startPageForm = new StartPage();
+            startPageForm.TopMost = true;
             startPageForm.Show();
+
         }
     }
 }
