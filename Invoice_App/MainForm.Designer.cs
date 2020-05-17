@@ -42,7 +42,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.export = new System.Windows.Forms.Button();
             this.saveandexport = new System.Windows.Forms.Button();
@@ -50,6 +49,11 @@
             this.exit = new System.Windows.Forms.Button();
             this.recipientcombo = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,11 +67,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -182,14 +182,6 @@
             this.textBox7.Size = new System.Drawing.Size(196, 22);
             this.textBox7.TabIndex = 26;
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(675, 450);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(196, 22);
-            this.textBox8.TabIndex = 27;
-            // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(675, 500);
@@ -234,7 +226,7 @@
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(161, 54);
             this.delete.TabIndex = 31;
-            this.delete.Text = "Изтрий";
+            this.delete.Text = "Изчисти";
             this.delete.UseVisualStyleBackColor = false;
             // 
             // exit
@@ -247,7 +239,7 @@
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(129, 54);
             this.exit.TabIndex = 32;
-            this.exit.Text = "Отказ";
+            this.exit.Text = "Меню";
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
@@ -280,6 +272,43 @@
             this.dataGridView1.Size = new System.Drawing.Size(1108, 208);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // number
+            // 
+            this.number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.number.HeaderText = "Номер";
+            this.number.MaxInputLength = 5000;
+            this.number.MinimumWidth = 6;
+            this.number.Name = "number";
+            this.number.Width = 80;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Наименование на стока/услуга";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            this.name.Width = 325;
+            // 
+            // quantity
+            // 
+            this.quantity.HeaderText = "Количество";
+            this.quantity.MinimumWidth = 6;
+            this.quantity.Name = "quantity";
+            this.quantity.Width = 125;
+            // 
+            // price
+            // 
+            this.price.HeaderText = "Ед. цена";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.Width = 125;
+            // 
+            // value
+            // 
+            this.value.HeaderText = "Стойност";
+            this.value.MinimumWidth = 6;
+            this.value.Name = "value";
+            this.value.Width = 125;
             // 
             // label11
             // 
@@ -437,42 +466,13 @@
             this.label15.TabIndex = 46;
             this.label15.Text = "Съставил:";
             // 
-            // number
+            // comboBox1
             // 
-            this.number.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.number.HeaderText = "Номер";
-            this.number.MaxInputLength = 5000;
-            this.number.MinimumWidth = 6;
-            this.number.Name = "number";
-            this.number.Width = 80;
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Наименование на стока/услуга";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            this.name.Width = 325;
-            // 
-            // quantity
-            // 
-            this.quantity.HeaderText = "Количество";
-            this.quantity.MinimumWidth = 6;
-            this.quantity.Name = "quantity";
-            this.quantity.Width = 125;
-            // 
-            // price
-            // 
-            this.price.HeaderText = "Ед. цена";
-            this.price.MinimumWidth = 6;
-            this.price.Name = "price";
-            this.price.Width = 125;
-            // 
-            // value
-            // 
-            this.value.HeaderText = "Стойност";
-            this.value.MinimumWidth = 6;
-            this.value.Name = "value";
-            this.value.Width = 125;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(675, 450);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 24);
+            this.comboBox1.TabIndex = 47;
             // 
             // MainForm
             // 
@@ -480,6 +480,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1168, 636);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label10);
@@ -499,7 +500,6 @@
             this.Controls.Add(this.saveandexport);
             this.Controls.Add(this.export);
             this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -540,7 +540,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button export;
         private System.Windows.Forms.Button saveandexport;
@@ -566,6 +565,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn value;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

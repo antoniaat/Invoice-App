@@ -64,7 +64,7 @@
             this.price,
             this.paidunpaid});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 238);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -130,7 +130,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(127, 108);
+            this.radioButton2.Location = new System.Drawing.Point(164, 108);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(113, 22);
@@ -155,7 +155,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 33);
+            this.label2.Location = new System.Drawing.Point(8, 33);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 18);
@@ -170,7 +170,7 @@
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(417, 378);
+            this.groupBox1.Location = new System.Drawing.Point(454, 64);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -182,11 +182,12 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(185, 30);
+            this.comboBox1.Location = new System.Drawing.Point(201, 30);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(319, 26);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // maskedTextBox1
             // 
@@ -229,7 +230,7 @@
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(45, 378);
+            this.groupBox2.Location = new System.Drawing.Point(45, 64);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -243,12 +244,12 @@
             this.repeat.BackColor = System.Drawing.Color.LightSeaGreen;
             this.repeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.repeat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.repeat.Location = new System.Drawing.Point(990, 474);
+            this.repeat.Location = new System.Drawing.Point(990, 67);
             this.repeat.Margin = new System.Windows.Forms.Padding(4);
             this.repeat.Name = "repeat";
             this.repeat.Size = new System.Drawing.Size(115, 54);
             this.repeat.TabIndex = 12;
-            this.repeat.Text = "< Назад";
+            this.repeat.Text = "Меню";
             this.repeat.UseVisualStyleBackColor = false;
             this.repeat.Click += new System.EventHandler(this.repeat_Click);
             // 

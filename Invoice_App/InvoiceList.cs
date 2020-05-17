@@ -13,5 +13,10 @@ namespace Invoice_App
         {
             this.Close();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
