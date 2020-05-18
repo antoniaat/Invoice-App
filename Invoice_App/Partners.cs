@@ -13,5 +13,10 @@ namespace Invoice_App
         {
             this.Close();
         }
+
+        private void searchpartner_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
