@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
       <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
     </Reference>
@@ -40,7 +43,11 @@
       <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -107,6 +114,21 @@
     <Compile Include="StartPage.Designer.cs">
       <DependentUpon>StartPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="userRecord.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userRecord.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="userRecord.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userRecord.tt</DependentUpon>
+    </Compile>
+    <Compile Include="userRecord.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userRecord.edmx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="InvoiceList.resx">
       <DependentUpon>InvoiceList.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -147,6 +169,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="userRecord.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>userRecord.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="userRecord.edmx.diagram">
+      <DependentUpon>userRecord.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -156,6 +185,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\92165337_530614627645564_8151430491346567168_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="userRecord.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>userRecord.Context.cs</LastGenOutput>
+      <DependentUpon>userRecord.edmx</DependentUpon>
+    </Content>
+    <Content Include="userRecord.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>userRecord.edmx</DependentUpon>
+      <LastGenOutput>userRecord.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

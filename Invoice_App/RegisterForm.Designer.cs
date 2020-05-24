@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lastName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.job = new System.Windows.Forms.TextBox();
             this.registerBtn = new System.Windows.Forms.Button();
             this.alreadyRegistered = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.phone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.firstName = new System.Windows.Forms.MaskedTextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -49,16 +49,16 @@
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(43, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 26);
+            this.label1.Size = new System.Drawing.Size(76, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Име:";
             // 
-            // textBox1
+            // lastName
             // 
-            this.textBox1.Location = new System.Drawing.Point(284, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(445, 32);
-            this.textBox1.TabIndex = 1;
+            this.lastName.Location = new System.Drawing.Point(284, 91);
+            this.lastName.Name = "lastName";
+            this.lastName.Size = new System.Drawing.Size(445, 37);
+            this.lastName.TabIndex = 13;
             // 
             // label2
             // 
@@ -66,9 +66,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Location = new System.Drawing.Point(43, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 26);
+            this.label2.Size = new System.Drawing.Size(100, 30);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Фамилия:";
+            this.label2.Text = "Имейл";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -76,16 +77,16 @@
             this.label3.BackColor = System.Drawing.SystemColors.Window;
             this.label3.Location = new System.Drawing.Point(43, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 26);
+            this.label3.Size = new System.Drawing.Size(117, 30);
             this.label3.TabIndex = 4;
             this.label3.Text = "Парола:";
             // 
-            // textBox3
+            // job
             // 
-            this.textBox3.Location = new System.Drawing.Point(284, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(445, 32);
-            this.textBox3.TabIndex = 5;
+            this.job.Location = new System.Drawing.Point(284, 167);
+            this.job.Name = "job";
+            this.job.Size = new System.Drawing.Size(445, 37);
+            this.job.TabIndex = 5;
             // 
             // registerBtn
             // 
@@ -109,7 +110,7 @@
             this.alreadyRegistered.Location = new System.Drawing.Point(43, 403);
             this.alreadyRegistered.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.alreadyRegistered.Name = "alreadyRegistered";
-            this.alreadyRegistered.Size = new System.Drawing.Size(206, 26);
+            this.alreadyRegistered.Size = new System.Drawing.Size(241, 30);
             this.alreadyRegistered.TabIndex = 7;
             this.alreadyRegistered.TabStop = true;
             this.alreadyRegistered.Text = "ИМАТЕ АКАУНТ?";
@@ -121,16 +122,16 @@
             this.label4.BackColor = System.Drawing.SystemColors.Window;
             this.label4.Location = new System.Drawing.Point(43, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 26);
+            this.label4.Size = new System.Drawing.Size(151, 30);
             this.label4.TabIndex = 8;
             this.label4.Text = "Длъжност:";
             // 
-            // textBox4
+            // phone
             // 
-            this.textBox4.Location = new System.Drawing.Point(284, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(445, 32);
-            this.textBox4.TabIndex = 9;
+            this.phone.Location = new System.Drawing.Point(284, 205);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(445, 37);
+            this.phone.TabIndex = 9;
             // 
             // label5
             // 
@@ -138,42 +139,42 @@
             this.label5.BackColor = System.Drawing.SystemColors.Window;
             this.label5.Location = new System.Drawing.Point(43, 211);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(235, 26);
+            this.label5.Size = new System.Drawing.Size(271, 30);
             this.label5.TabIndex = 10;
             this.label5.Text = "Телефон за връзка:";
             // 
-            // maskedTextBox1
+            // firstName
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(284, 53);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(445, 32);
-            this.maskedTextBox1.TabIndex = 11;
+            this.firstName.Location = new System.Drawing.Point(284, 53);
+            this.firstName.Name = "firstName";
+            this.firstName.Size = new System.Drawing.Size(445, 37);
+            this.firstName.TabIndex = 11;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(284, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(445, 32);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.password.Location = new System.Drawing.Point(284, 129);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(445, 37);
+            this.password.TabIndex = 12;
+            this.password.UseSystemPasswordChar = true;
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1145, 568);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.firstName);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.phone);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.alreadyRegistered);
             this.Controls.Add(this.registerBtn);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.job);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lastName);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -188,16 +189,16 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lastName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox job;
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.LinkLabel alreadyRegistered;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox phone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.MaskedTextBox firstName;
+        private System.Windows.Forms.TextBox password;
     }
 }
